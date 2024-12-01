@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--LINK BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desafios de Desarollo Web 2</h1>
+    
+    <h2>Desafio 7: </h2>
+    <p id="produceName">Smartphone XYZ</p>
+    <p id="producePrice">Precio: $500</p>
+    
+    <p>Desafio 8: </p>
+    <div id="divTocards">Espcio para los cards de productos</div>
+    
+    <p>Desafio 9: </p>
+    <div id="espacioD9"></div>
+
+    <p>Desafio 10: e-commerce</p>
+    <header class="barranav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="x"><img src="https://i.pinimg.com/736x/da/bd/97/dabd97afe149e7366e7cb7d73498c6ee.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">Hi, Endi</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Perfumes</a></li>
+                      <li><a class="dropdown-item" href="#">Cremas</a></li>
+                      <li><hr class="dropdown-divider">Accesorios</li>
+                      <li><a class="dropdown-item" href="#">Tecnologia</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Otros</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!--CAROUSEL de bootstrap-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/736x/57/92/ab/5792abc9332a8f0f7b686efafc391c94.jpg" class="d-block w-100 imgcarou" alt="carousel 1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/7c/55/b0/7c55b0ac220a5b28ae6fc89ec336cf69.jpg" class="d-block w-100 imgcarou" alt="carousel 2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/67/15/16/671516230a17a7569476b52c7616b7fa.jpg" class="d-block w-100 imgcarou" alt="carousel 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <p class="textosuelto">Productos destacados</p>
+
+    <!--Productos destacados-->
+    <div id="espacioPdDestcados">
+      Espacio para prodctos destacados
+    </div>
+
+
+    
+    <footer>
+    <!-- Barra de navegación con el botón del carrito -->
+    <button id="cartButton" class="botoncar">
+      <!--Icono de carrito-->
+      <i class='bx bxs-cart iconcar'></i>
+      <span id="cartCount">0</span>
+    </button>
+
+    <!-- Modal del carrito de compras -->
+    <div id="cartModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Tu Carrito</h2>
+        <div id="cartItems"></div>
+        <div>
+          <strong>Total: <span id="cartTotal">$0.00</span></strong>
+        </div>
+      </div>
+    </div>
+    </footer>
+    
+    <p class="textosuelto">Grila de Ofertas</p>
+    <section class="ofertas">
+      <div class="item1">
+          <img src="https://i.pinimg.com/736x/15/26/fa/1526fa2dde22c81e48ad5136cbdfe489.jpg" class="img1" alt="Oferta 1">
+      </div>
+      <div class="item2">
+          <img src="https://i.pinimg.com/736x/15/26/fa/1526fa2dde22c81e48ad5136cbdfe489.jpg" class="img2" alt="Oferta 2">
+      </div>
+      <div class="item3">
+          <img src="https://i.pinimg.com/736x/15/26/fa/1526fa2dde22c81e48ad5136cbdfe489.jpg" class="img2" alt="Oferta 3">
+      </div>
+      <div class="item4">
+          <img src="https://i.pinimg.com/736x/15/26/fa/1526fa2dde22c81e48ad5136cbdfe489.jpg" class="img2" alt="Oferta 4">
+      </div>
+    </section>
+
+    <p class="textosuelto">Informacion de la marca</p>
+    <div class="infoadicional">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <p class="card-text">Terminos y condiciones.</p>
+          <p class="card-text">Politicas de privacidad.</p>
+          <p class="card-text">Centro de Ayuda.</p>
+          <p class="card-text">Servicio Tecnico.</p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <p class="card-text">Cambios y Devoluciones.</p>
+          <p class="card-text">Medios de pago</p>
+          <p class="card-text">Boton de arrepentimiento</p>
+          <p class="card-text">Preguntas Frecuentes</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <p class="card-text">Trabaja con nosotros.</p>
+          <p class="card-text">Seguinos en Redes.</p>
+          <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt icons'></i></a>
+          <a href="https://www.facebook.com/"><i class='bx bxl-facebook-square icons' ></i></a>
+          <a href="https://www.youtube.com/"><i class='bx bxl-youtube icons' ></i></a>
+          <a href="https://x.com/"><i class='bx bxl-twitter icons'></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">Copyright © 1999-2024 MercadoLibre S.R.L
+      Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</p>
+
+    <!--VINCULO BOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--VINCULO JS-->
+    <script src="./script10.js"></script>
+</body>
+</html>
